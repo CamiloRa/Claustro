@@ -7,9 +7,9 @@ library(caret)
 library(Rtsne)
 library(readr)
 
-whisky_df <- read_csv("data/raw/whisky.csv")
+plants_df <- readr::read_csv("data/raw/plants.data.csv")
 
-completre <-whisky_df[complete.cases(whisky_df),]
+completre <-plants_df[complete.cases(plants_df),]
 
 ld_dmy <- caret::dummyVars(" ~ . ", data =completre, fullRank = TRUE)
 trasf_ld <- data.frame(predict(ld_dmy, newdata = completre))
