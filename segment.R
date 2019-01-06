@@ -5,6 +5,9 @@ library(dplyr)
 library(cluster)
 library(caret)
 library(Rtsne)
+library(readr)
+
+whiskey <- read_csv("data/raw/whiskey.csv")
 
 completre <-completre[complete.cases(minilazydaze),]
 
