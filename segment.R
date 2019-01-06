@@ -1,15 +1,15 @@
+# let's classify some whisky
 
-
-
+#laod libs
 library(dplyr)
 library(cluster)
 library(caret)
 library(Rtsne)
 library(readr)
 
-whiskey <- read_csv("data/raw/whiskey.csv")
+whisky_df <- read_csv("data/raw/whisky.csv")
 
-completre <-completre[complete.cases(minilazydaze),]
+completre <-whisky_df[complete.cases(whisky_df),]
 
 ld_dmy <- caret::dummyVars(" ~ . ", data =completre, fullRank = TRUE)
 trasf_ld <- data.frame(predict(ld_dmy, newdata =completre))
