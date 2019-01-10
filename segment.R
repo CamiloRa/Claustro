@@ -1,6 +1,6 @@
 # let's classify some whisky
 
-#laod libs
+#load libraries
 library(dplyr)
 library(cluster)
 library(caret)
