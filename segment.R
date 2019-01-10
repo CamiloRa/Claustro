@@ -9,7 +9,6 @@ library(readr)
 
 #this has to be a function that cleans and makes a nice DF
 plants_df <- readr::read_csv("data/raw/plants.data.csv")
-
 completre <-plants_df[complete.cases(plants_df),]
 
 ld_dmy <- caret::dummyVars(" ~ . ", data =completre, fullRank = TRUE)

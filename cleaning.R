@@ -5,6 +5,7 @@ library(dplyr)
 #load functions
 readfirstcolumn <- function  (dataframe) {
   return(nrow (dataframe))
+  
 }
 
 #read data
@@ -17,7 +18,7 @@ readfirstcolumn(plants_df)
   
 
 
-str(plants_df[4,]
+str(plants_df[4,])
 plants_df[4:8,]
 colnames(plants_df)
 colnames(plants_df) <- "plant_name"
