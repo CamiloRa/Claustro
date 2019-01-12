@@ -5,14 +5,17 @@ library(purrr)
 
 #load functions
 readfirstcolumn <- function  (dataframe) {
+  dataframe[1,1] %>%
   return(nrow (dataframe))
+  
   
 }
 
 #read data
-plants <- readLines("data/raw/plants.data.csv" )
+plants_df <- readLines("data/raw/plants.data.csv" ) %>%
+  as.data.frame(stringsAsFactors = FALSE)
 
-plants_df <- as.data.frame(plants, stringsAsFactors = FALSE)
+
 
 #make a column
 readfirstcolumn(plants_df)
