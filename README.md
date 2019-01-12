@@ -12,3 +12,10 @@ The procedure is simple: we identofy numeroc characteristics and create clusters
 In the first case we will use simply k-clusters, while in the second we will approach this using medoids. The relevant sources will be added later, so users can see for themsleves whereas the aproach fit their interests.
 
 Since this analysis is geared towards business uses, the explanation is going to be a simple function, managing to extract salient features and highlight prominent facts, and limiting features that might ditrsact from urgent identification of characteristics that  might be useful.
+
+## Exercise One
+Reading the data from dataplants, using the states as categories with which to find poklants that might share characteristics about their habitat.
+
+Also, the exercise uses technoiques to read from a file where there is minimal organization and covert it into something that can be used to study categorical data. 
+
+Ultimately, the goal is to use a fucntion to describe the readoing and cleaning.
