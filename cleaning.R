@@ -1,6 +1,7 @@
 #reading data in a DF, later to turn into categories
 #load libraries
 library(dplyr)
+library(purrr)
 
 #load functions
 readfirstcolumn <- function  (dataframe) {
@@ -10,7 +11,8 @@ readfirstcolumn <- function  (dataframe) {
 
 #read data
 plants <- readLines("data/raw/plants.data.csv" )
-plants_df <- as.data.frame(plants)
+
+plants_df <- as.data.frame(plants, stringsAsFactors = FALSE)
 
 #make a column
 readfirstcolumn(plants_df)
