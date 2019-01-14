@@ -2,6 +2,7 @@
 #load libraries
 library(dplyr)
 library(purrr)
+library(caret)
 
 #load functions
 readfirstcolumn <- function  (dataframe) {
@@ -14,7 +15,7 @@ readfirstcolumn <- function  (dataframe) {
 #read data
 plants_df <- readLines("data/raw/plants.data.csv" ) %>%
   as.data.frame(stringsAsFactors = FALSE)
-
+plants <- read_csv("data/raw/plants.data.csv" )
 
 
 #make a column
